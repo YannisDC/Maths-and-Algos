@@ -1,0 +1,12 @@
+from pyo import *
+s = Server().boot()
+osc1 = Sine(freq=440, mul=0.1).out()
+osc2 = Sine(freq=880, mul=0.1).out()
+osc3 = Sine(freq=440, mul=0.1).out()
+osc4 = Sine(freq=880, mul=0.1).out()
+osc5 = Sine(freq=440, mul=0.1).out()
+osc6 = Sine(freq=880, mul=0.1).out()
+osc7 = Sine(freq=440, mul=0.1).out()
+osc8 = Sine(freq=880, mul=0.1).out()
+s.start()
+s.gui(locals())
